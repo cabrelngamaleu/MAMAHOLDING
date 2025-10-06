@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAMAHOLDING - Excellence & Innovation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">MAMAHOLDING</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À Propos</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#equipe" class="nav-link">Équipe</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text reveal-up">
+                <h1 class="hero-title">
+                    <span class="title-line">L'Excellence</span>
+                    <span class="title-line">à Votre Service</span>
+                </h1>
+                <p class="hero-subtitle">
+                    MAMAHOLDING redéfinit les standards de l'innovation et du leadership dans le secteur
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Découvrir</a>
+                    <a href="#services" class="btn btn-secondary">Nos Services</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Notre Histoire</span>
+                <h2 class="section-title">Une Vision d'Excellence</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text reveal-left">
+                    <p class="lead-text">
+                        MAMAHOLDING incarne l'excellence dans chaque projet que nous entreprenons. 
+                        Depuis notre création, nous avons bâti notre réputation sur des valeurs 
+                        d'innovation, d'intégrité et de performance.
+                    </p>
+                    <p>
+                        Notre expertise s'étend sur plusieurs domaines stratégiques, permettant à nos 
+                        clients de bénéficier d'un accompagnement complet et personnalisé. Nous croyons 
+                        en la puissance de la collaboration et en l'importance de créer des relations 
+                        durables avec nos partenaires.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Années d'Expérience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="250">0</span>
+                            <span class="stat-label">Projets Réussis</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="98">0</span>
+                            <span class="stat-label">% Satisfaction Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image reveal-right">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#c9a961;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#8b6f47;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <path fill="url(#gradient1)" d="M44.7,-76.4C58.8,-69.3,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,15.6,81.4,31.1,73.1,45.2C64.8,59.3,53.8,72,40.1,78.9C26.4,85.8,10,86.9,-6.1,85.4C-22.2,83.9,-38,79.8,-52.4,72.9C-66.8,66,-79.8,56.3,-86.4,43.5C-93,30.7,-93.2,15.4,-90.8,1.1C-88.4,-13.1,-83.4,-26.3,-75.9,-38.4C-68.4,-50.5,-58.4,-61.5,-46.2,-69.3C-34,-77.1,-19.6,-81.7,-4.2,-80.2C11.2,-78.7,30.6,-83.5,44.7,-76.4Z" transform="translate(100 100)" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Notre Expertise</span>
+                <h2 class="section-title">Services d'Excellence</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <path d="M30 5L5 17.5V35C5 47.5 14 59 30 60C46 59 55 47.5 55 35V17.5L30 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M30 30L30 45" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="30" cy="22" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Conseil Stratégique</h3>
+                    <p class="service-description">
+                        Accompagnement personnalisé pour développer votre stratégie d'entreprise 
+                        et atteindre vos objectifs de croissance.
+                    </p>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect x="5" y="15" width="50" height="35" rx="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M15 25H45M15 35H35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="15" cy="45" r="2" fill="currentColor"/>
+                            <circle cx="25" cy="45" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Gestion de Patrimoine</h3>
+                    <p class="service-description">
+                        Solutions sur mesure pour optimiser et sécuriser votre patrimoine 
+                        avec une vision à long terme.
+                    </p>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <path d="M30 10L50 30L30 50L10 30L30 10Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M30 20V40M20 30H40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Innovation & Technologie</h3>
+                    <p class="service-description">
+                        Intégration des dernières technologies pour transformer votre entreprise 
+                        et rester compétitif.
+                    </p>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="40" cy="20" r="8" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="30" cy="40" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M25 23L22 27M35 23L38 27M30 32V35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Développement Durable</h3>
+                    <p class="service-description">
+                        Stratégies responsables pour un impact positif sur l'environnement 
+                        et la société.
+                    </p>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <path d="M10 30L25 15L35 25L50 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 50H50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="25" cy="15" r="3" fill="currentColor"/>
+                            <circle cx="35" cy="25" r="3" fill="currentColor"/>
+                            <circle cx="50" cy="10" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Analyse de Marché</h3>
+                    <p class="service-description">
+                        Études approfondies et insights précis pour prendre les meilleures 
+                        décisions d'investissement.
+                    </p>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="20" stroke="currentColor" stroke-width="2"/>
+                            <path d="M30 15V30L40 40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Excellence Opérationnelle</h3>
+                    <p class="service-description">
+                        Optimisation de vos processus pour une efficacité maximale et 
+                        des résultats exceptionnels.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Nos Réalisations</span>
+                <h2 class="section-title">Portfolio d'Excellence</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal-up">
+                    <div class="portfolio-image">
+                        <div class="image-overlay">
+                            <h3>Projet Alpha</h3>
+                            <p>Transformation Digitale</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal-up">
+                    <div class="portfolio-image">
+                        <div class="image-overlay">
+                            <h3>Projet Beta</h3>
+                            <p>Stratégie de Croissance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal-up">
+                    <div class="portfolio-image">
+                        <div class="image-overlay">
+                            <h3>Projet Gamma</h3>
+                            <p>Innovation Technologique</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal-up">
+                    <div class="portfolio-image">
+                        <div class="image-overlay">
+                            <h3>Projet Delta</h3>
+                            <p>Excellence Opérationnelle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipe" class="team-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Notre Équipe</span>
+                <h2 class="section-title">Leadership & Expertise</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-member reveal-up">
+                    <div class="member-image">
+                        <div class="image-placeholder-circle"></div>
+                    </div>
+                    <h3 class="member-name">Sophie Laurent</h3>
+                    <p class="member-role">Directrice Générale</p>
+                    <p class="member-bio">
+                        Visionnaire stratégique avec 20 ans d'expérience dans le leadership d'entreprise.
+                    </p>
+                </div>
+                <div class="team-member reveal-up">
+                    <div class="member-image">
+                        <div class="image-placeholder-circle"></div>
+                    </div>
+                    <h3 class="member-name">Marc Dubois</h3>
+                    <p class="member-role">Directeur Financier</p>
+                    <p class="member-bio">
+                        Expert en gestion financière et optimisation de patrimoine.
+                    </p>
+                </div>
+                <div class="team-member reveal-up">
+                    <div class="member-image">
+                        <div class="image-placeholder-circle"></div>
+                    </div>
+                    <h3 class="member-name">Élise Martin</h3>
+                    <p class="member-role">Directrice Innovation</p>
+                    <p class="member-bio">
+                        Pionnière dans l'adoption de technologies transformatrices.
+                    </p>
+                </div>
+                <div class="team-member reveal-up">
+                    <div class="member-image">
+                        <div class="image-placeholder-circle"></div>
+                    </div>
+                    <h3 class="member-name">Thomas Bernard</h3>
+                    <p class="member-role">Directeur Stratégie</p>
+                    <p class="member-bio">
+                        Architecte de stratégies de croissance durables et innovantes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Parlons de Votre Projet</span>
+                <h2 class="section-title">Contactez-Nous</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info reveal-left">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>123 Avenue des Champs-Élysées<br>75008 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@mamaholding.fr</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Lundi - Vendredi: 9h - 18h<br>Samedi - Dimanche: Fermé</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form reveal-right" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Votre Nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Votre Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Votre Téléphone">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Votre Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Envoyer le Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">MAMAHOLDING</h3>
+                    <p class="footer-description">
+                        L'excellence à votre service depuis 2009. Nous transformons vos ambitions 
+                        en réalisations concrètes.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">À Propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Conseil Stratégique</a></li>
+                        <li><a href="#services">Gestion de Patrimoine</a></li>
+                        <li><a href="#services">Innovation</a></li>
+                        <li><a href="#services">Développement Durable</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-Nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MAMAHOLDING. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
