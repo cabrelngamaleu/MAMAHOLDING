@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.notre-entreprise {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(20, 30, 48, 0.85), rgba(20, 30, 48, 0.95)), 
+                url('https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?q=80&w=2000') center/cover no-repeat;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(20, 30, 48, 0.75);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 100%;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.left-content {
+    flex: 1;
+    max-width: 650px;
+}
+
+.subtitle {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.title-underline {
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #c41e3a 0%, #8b1428 100%);
+    margin-bottom: 30px;
+}
+
+.description {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.play-button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #c41e3a 0%, #8b1428 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(196, 30, 58, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.play-button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(196, 30, 58, 0.6);
+}
+
+.play-button svg {
+    position: relative;
+    z-index: 1;
+    margin-left: 3px;
+}
+
+.right-content {
+    flex: 0 0 auto;
+    margin-top: 80px;
+}
+
+.info-box {
+    background: transparent;
+    border: 3px solid #c41e3a;
+    padding: 40px 45px;
+    min-width: 380px;
+    position: relative;
+}
+
+.info-box::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(135deg, rgba(196, 30, 58, 0.1) 0%, rgba(139, 20, 40, 0.05) 100%);
+    z-index: -1;
+}
+
+.info-text {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+
+.experience {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.number {
+    color: #ffffff;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+.label {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    max-width: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .left-content {
+        max-width: 100%;
+    }
+
+    .right-content {
+        margin-top: 0;
+    }
+
+    .info-box {
+        min-width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .notre-entreprise {
+        padding: 60px 0;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .info-box {
+        padding: 30px 35px;
+        min-width: 280px;
+    }
+
+    .number {
+        font-size: 90px;
+    }
+
+    .info-text {
+        font-size: 16px;
+    }
+}
